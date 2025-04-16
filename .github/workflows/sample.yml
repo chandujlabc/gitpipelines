@@ -9,3 +9,9 @@ jobs:
       - uses : actions/checkout@v4
       - name: just run normal printing
         run: echo "hello world!"
+      - name: create a file
+        run: echo "first file created" > firstfile.txt
+      - name: create a file with content  
+        run: echo "this is a file with content" > secondfile.txt
+      - name: create a file with content and append to it
+        run: echo "this is a file with content" >> secondfile.txt
